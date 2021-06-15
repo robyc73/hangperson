@@ -24,7 +24,7 @@ Since a SaaS server is simulated by issuing HTTP requests, and its behavior can 
 
 <details>
   <summary>Read the section on "Using Capybara with Cucumber" on Capybara's home page.  Which step definitions use Capybara to simulate the server as a browser would?  Which step definitions use Capybara to inspect the app's response to the stimulus?</summary>
-  <p><blockquote>Step definitions that use <code>visit</code>, <code>click_button</code>, <code>fill_in</code> are simulating a browser by visiting a page and/or filling in a form on that page and clicking its buttons.  Those that use <code>have_content</code> are inspecting the output.</blockquote></p>
+  <p><blockquote>Step definitions that use <code>visit</code>, <code>click_button</code>`, <code>fill_in</code> are simulating a browser by visiting a page and/or filling in a form on that page and clicking its buttons.  Those that use <code>have_content</code> are inspecting the output.</blockquote></p>
 </details>
 <br />
 
@@ -77,7 +77,7 @@ The create-new-game code in the Sinatra app should do the following:
 
 View how these steps are actualized in the app.rb file under the `post /create do` route.
 
-Now stage and commit all files locally, then `git push heroku master` to deploy to Heroku again and manually verify this improved behavior.
+Now stage and commit all files locally on Cloud9, then `git push heroku master` to deploy to Heroku again and manually verify this improved behavior.
 
 #### Self Check Question
 
@@ -89,7 +89,7 @@ Now stage and commit all files locally, then `git push heroku master` to deploy 
 Develop the scenario for guessing a letter
 -------------------------------------------
 
-For this scenario, in `features/guess.feature`, we've already provided a correct  `show.erb` HTML file that submits the player's guess to the `guess` action.  You already have a `HangpersonGame#guess` instance method that has the needed functionality.
+For this scenario, in `features/guess.feature`, we've already provided a correct  `show.erb` HTML file that submits the player's guess to the `guess` action.  You already have a `HangpersonGame#guess` instance method that has the needed functionality.  
 
 #### Self Check Question
 
@@ -118,7 +118,7 @@ While you're here, read the comments in the file. They give clues for future ste
 
 When finished adding that code, verify that all the steps in `features/guess.feature` now pass by running cucumber for that .feature file.
 
-* Debugging tip: The Capybara command `save_and_open_page` placed in a step definition will cause the step to open a Web browser window showing what the page looks like at that point in the scenario.  The functionality is provided in part by a gem called `launchy` which is in the Gemfile.
+* Debugging tip: The Capybara command `save_and_open_page` placed in a step definition will cause the step to open a Web browser window showing what the page looks like at that point in the scenario.  The functionality is provided in part by a gem called `launchy` which is in the Gemfile.  NOTE: to run `launchy` on c9 you first need to run `sudo apt-get install iceweasel`
 
 -----
 

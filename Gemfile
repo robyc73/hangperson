@@ -1,13 +1,14 @@
 source 'https://rubygems.org'
-ruby '2.6.6'
+ruby '2.4.0'
 
-gem 'sinatra', '>= 2.0.2'
+gem 'sinatra', '>= 2.0.4'
 gem 'sinatra-flash', '0.3.0'
 
 group :development, :test do
+  gem 'capybara', '3.1'
+
   gem 'cucumber', '2.0.0'
   gem 'cucumber-sinatra', '0.5.0'
-  gem 'capybara', '3.1'
 
   gem 'rspec', '3.3.0'
   gem 'rspec-autotest', '1.0.0'
@@ -21,5 +22,5 @@ group :development, :test do
 
   gem 'simplecov', '0.16.1'
   gem 'webmock', '3.3.0'
-  gem 'ZenTest', '4.11.2'
+  gem 'ZenTest', '4.11.0'
 end
