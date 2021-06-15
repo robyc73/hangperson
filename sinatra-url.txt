@@ -1,1 +1,1 @@
-https://sinatra-saas-hangperson.herokuapp.com/
+http://my-app-73677.herokuapp.com/
